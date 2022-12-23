@@ -1,6 +1,5 @@
 export default function getRefs() {
-    return refs = 
-    {inputRef: document.querySelector('#search-box'),
+    return {inputRef: document.querySelector('#search-box'),
     countryListRef: document.querySelector('.country-list'),
     countryInfoRef: document.querySelector('.country-info')}
 }
