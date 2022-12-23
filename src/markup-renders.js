@@ -1,5 +1,9 @@
 export { addMarkupForCountriesList, addMarkupForOneCountry, cleanMarkup }
 
+import getRefs from "./countries-refs";
+
+const refs = getRefs()
+
 function renderMarkupForCountriesList(countries){
     return countries.map(({name, flags}) =>
         `<li class="country"><img src="${flags.svg}"
@@ -26,7 +30,7 @@ function addMarkupForOneCountry(countries){
 }
 
 function addMarkupForCountriesList(countries){
-    refs.countryListRef.innerHTML = renderMarkupForCountriesList(countries);
+   refs.countryListRef.innerHTML = renderMarkupForCountriesList(countries);
 }
 
 function cleanMarkup(element) {

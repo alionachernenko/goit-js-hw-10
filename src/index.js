@@ -14,7 +14,7 @@ refs.inputRef.addEventListener('input', debounce(onInputRefInput, DEBOUNCE_DELAY
 
 function onInputRefInput(e) {
     const inputValue = e.target.value.trim()
-
+    
     if (inputValue.length > 0){
         fetchCountries(inputValue)
             .then(countries => {
